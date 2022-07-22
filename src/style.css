@@ -1,0 +1,61 @@
+:root {
+    --menuBg: #f1f5f9;
+    --menuFont: 'PT Sans', sans-serif;
+    --contentFont: 'Edu SA Beginner', cursive;
+    --bgColor: #e0f2fe;
+    --borderRadius: 8px;
+    --menuPadding: 40px;
+
+}
+
+* {
+    margin: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--bgColor);
+    height:100%;
+}
+
+.topBarDiv {
+    padding: 40px;
+    display: flex;
+    gap: 5px;
+
+
+}
+
+.topBarBtn {
+    width: 120px;
+    height: 40px;
+    font-family: var(--menuBg);
+}
+
+.mainContentContainer {
+    height:80vh;
+    width: 80vh;
+
+    border: 3px solid black;
+    border-radius: var(--borderRadius);
+    padding: var(--menuPadding)
+}
+
+.contentContainer {
+    padding: 40px;
+}
+
+.restaurantHeader {
+    text-align: center;
+}
+
+.restaurantHeader, .homeDescriptionContainer, .hoursContainer, .locationContainer {
+    border: 1px solid black;
+} 
+
+.hoursContent {
+    white-space: pre;
+}
