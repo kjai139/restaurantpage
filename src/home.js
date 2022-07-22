@@ -3,7 +3,7 @@ const displayHome = () => {
 
     const restaurantHeader = document.createElement('h1')
     restaurantHeader.classList.add('restaurantHeader')
-    restaurantHeader.setAttribute('style', 'white-space: pre;')
+    
     restaurantHeader.textContent = 'A Very Pretentious Restaurant'
 
     container.appendChild(restaurantHeader)
