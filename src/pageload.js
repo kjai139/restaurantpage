@@ -12,6 +12,7 @@ let createHomePage = () => {
 
     const menuBtn = document.createElement('button')
     menuBtn.classList.add('topBarBtn')
+    menuBtn.setAttribute('id', 'menuBtn')
     menuBtn.textContent = 'Menu'
 
     const contactBtn = document.createElement('button')

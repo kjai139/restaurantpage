@@ -16,7 +16,7 @@ const displayHome = () => {
 
     const homeComment = document.createElement('p')
     homeComment.classList.add('homeComment')
-    homeComment.textContent = 'Random Joe'
+    homeComment.textContent = '-Random Joe'
 
     homeDescriptionContainer.appendChild(homeDescription)
     homeDescriptionContainer.appendChild(homeComment)
@@ -29,7 +29,7 @@ const displayHome = () => {
     const hoursContent = document.createElement('p')
     hoursContent.classList.add('hoursContent')
 
-    hoursContent.textContent = 'Sunday: 8am - 8pm \r\n Monday: 6am - 6pm \r\n Tuesday: 6am - 6pm \r\n Wednesday: 6am - 6pm \r\n Thursday: 6am - 10pm \r\n Friday: 6am - 10pm \r\n Saturday: 8am - 10pm'
+    hoursContent.innerHTML = '<b>Sunday:</b> 8am - 8pm\r\n<b>Monday:</b> 6am - 6pm\r\n<b>Tuesday:</b> 6am - 6pm\r\n<b>Wednesday:</b> 6am - 6pm\r\n<b>Thursday:</b> 6am - 10pm\r\n<b>Friday:</b> 6am - 10pm\r\n<b>Saturday:</b> 8am - 10pm'
 
     hoursContainer.appendChild(hoursContent)
 

@@ -1,10 +1,12 @@
 :root {
-    --menuBg: #f1f5f9;
+    --menuBg: #ebc999;
     --menuFont: 'PT Sans', sans-serif;
     --contentFont: 'Edu SA Beginner', cursive;
-    --bgColor: #e0f2fe;
+    --bgColor: #4d3227;
     --borderRadius: 8px;
     --menuPadding: 40px;
+
+    --btnColor: #ebc999;
 
 }
 
@@ -22,9 +24,9 @@
 }
 
 .topBarDiv {
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     display: flex;
-    gap: 5px;
+    gap: 10px;
 
 
 }
@@ -32,27 +34,56 @@
 .topBarBtn {
     width: 120px;
     height: 40px;
-    font-family: var(--menuBg);
+    font-family: var(--menuFont);
+
+    background-color: var(--btnColor);
 }
 
 .mainContentContainer {
-    height:80vh;
-    width: 80vh;
+    margin: 0px 40vh 0px 40vh;
+    background: var(--menuBg);
 
     border: 3px solid black;
     border-radius: var(--borderRadius);
-    padding: var(--menuPadding)
+    padding: var(--menuPadding);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(77	50	39, 0.8) -6px -2px 16px 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-family: var(--contentFont);
 }
 
 .contentContainer {
     padding: 40px;
 }
 
-.restaurantHeader {
-    text-align: center;
+.homeDescriptionContainer, .hoursContainer, .locationContainer {
+    padding: 40px;
 }
 
-.restaurantHeader, .homeDescriptionContainer, .hoursContainer, .locationContainer {
+.homeDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.homeComment {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.restaurantHeader {
+    border-bottom: 3px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin :40px 160px 0px 160px;
+    text-align: center;
+    padding: 20px;
+}
+
+.homeDescriptionContainer, .hoursContainer, .locationContainer {
     border: 1px solid black;
 } 
 
