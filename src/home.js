@@ -1,5 +1,20 @@
 const displayHome = () => {
+    const homeBtn = document.querySelector('#homeBtn')
+    homeBtn.classList.add('selected')
+    homeBtn.classList.add('disabled')
+
+    const contactBtn = document.querySelector('#contactBtn')
+    const menuBtn = document.querySelector('#menuBtn')
+
+    contactBtn.classList.remove('selected')
+    menuBtn.classList.remove('selected')
+    contactBtn.classList.remove('disabled')
+    menuBtn.classList.remove('disabled')
+
+
     const container = document.querySelector('.mainContentContainer')
+
+    container.textContent = ''
 
     const restaurantHeader = document.createElement('h1')
     restaurantHeader.classList.add('header')

@@ -6,6 +6,18 @@ import foodItem2 from './images/goldflakes.jpeg'
 
 
 const createMenu = () => {
+    const menuBtn = document.querySelector('#menuBtn')
+    menuBtn.classList.add('selected')
+    menuBtn.classList.add('disabled')
+
+    const homeBtn = document.querySelector('#homeBtn')
+    const contactBtn = document.querySelector('#contactBtn')
+
+    homeBtn.classList.remove('selected')
+    contactBtn.classList.remove('selected')
+    homeBtn.classList.remove('disabled')
+    contactBtn.classList.remove('disabled')
+
     const container = document.querySelector('.mainContentContainer')
 
     container.textContent = ''

@@ -14,3 +14,6 @@ menuBtn.addEventListener('click', createMenu)
 
 const contactBtn = document.querySelector('#contactBtn')
 contactBtn.addEventListener('click', createContact)
+
+const homeBtn = document.querySelector('#homeBtn')
+homeBtn.addEventListener('click', createHome)

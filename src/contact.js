@@ -1,4 +1,16 @@
 const createContact = () => {
+    const contactBtn = document.querySelector('#contactBtn')
+    contactBtn.classList.add('selected')
+    contactBtn.classList.add('disabled')
+
+    const homeBtn = document.querySelector('#homeBtn')
+    const menuBtn = document.querySelector('#menuBtn')
+
+    homeBtn.classList.remove('selected')
+    menuBtn.classList.remove('selected')
+    homeBtn.classList.remove('disabled')
+    menuBtn.classList.remove('disabled')
+
     const container = document.querySelector('.mainContentContainer')
 
     container.textContent = ''
