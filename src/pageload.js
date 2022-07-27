@@ -17,6 +17,7 @@ let createHomePage = () => {
 
     const contactBtn = document.createElement('button')
     contactBtn.classList.add('topBarBtn')
+    contactBtn.setAttribute('id', 'contactBtn')
     contactBtn.textContent = 'Contact Us'
 
     

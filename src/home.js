@@ -2,14 +2,15 @@ const displayHome = () => {
     const container = document.querySelector('.mainContentContainer')
 
     const restaurantHeader = document.createElement('h1')
-    restaurantHeader.classList.add('restaurantHeader')
+    restaurantHeader.classList.add('header')
     
     restaurantHeader.textContent = 'A Very Pretentious Restaurant'
 
     container.appendChild(restaurantHeader)
 
     const homeDescriptionContainer = document.createElement('div')
-    homeDescriptionContainer.classList.add('homeDescriptionContainer')
+    homeDescriptionContainer.classList.add('Container')
+    homeDescriptionContainer.classList.add('needsGap')
 
     const homeDescription = document.createElement('p')
     homeDescription.textContent = 'This restaurant has the most pretentious menu in town! The atmosphere and customer service will make you feel like you are rich as hell when you aren\'t! This is exactly the type of place you would want to be when you\'re feeling down.'
@@ -24,7 +25,7 @@ const displayHome = () => {
     container.appendChild(homeDescriptionContainer)
 
     const hoursContainer = document.createElement('div')
-    hoursContainer.classList.add('hoursContainer')
+    hoursContainer.classList.add('Container')
 
     const hoursContent = document.createElement('p')
     hoursContent.classList.add('hoursContent')
@@ -36,7 +37,7 @@ const displayHome = () => {
     container.appendChild(hoursContainer)
 
     const locationContainer = document.createElement('div')
-    locationContainer.classList.add('locationContainer')
+    locationContainer.classList.add('Container')
 
     const locationContent = document.createElement('p')
     locationContent.classList.add('locationContent')
