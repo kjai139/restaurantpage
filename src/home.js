@@ -19,7 +19,7 @@ const displayHome = () => {
     const restaurantHeader = document.createElement('h1')
     restaurantHeader.classList.add('header')
     
-    restaurantHeader.textContent = 'A Very Pretentious Restaurant'
+    restaurantHeader.textContent = 'Aa Very Pretentious Restaurant'
 
     container.appendChild(restaurantHeader)
 
